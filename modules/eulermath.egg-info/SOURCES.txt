@@ -1,0 +1,6 @@
+eulermath.py
+setup.py
+eulermath.egg-info/PKG-INFO
+eulermath.egg-info/SOURCES.txt
+eulermath.egg-info/dependency_links.txt
+eulermath.egg-info/top_level.txt
