@@ -1,8 +1,9 @@
-from euler_0001 import solve
+# import solve from the Python solution of the question (eg: euler_0001)
+from euler_0004 import solve
 
 
 def main():
-    n = 10
+    n = 3
     return solve(n)
 
 
