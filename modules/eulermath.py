@@ -23,7 +23,7 @@ def get_primes(n):
     sieve[0] = False
     sieve[1] = False
     for i in range(2, math.ceil(math.sqrt(n))):
-        for j in range(i*i, n, i):
+        for j in range(i*i, n+1, i):
             sieve[j] = False
     primes = []
     for i in range(n+1):
@@ -66,3 +66,17 @@ def check_palindrome(n):
         if s[i]!=s[-i-1]:
             return False
     return True
+
+
+def get_nth_prime(n):
+    """
+    Returns nth prime number.
+    """
+    size_factor = 2
+    s = n * size_factor
+    primes = get_primes(s)
+    while len(primes) < n:
+        size_factor += 1
+        s = n * size_factor
+        primes = get_primes(s)
+    return primes[n-1]
